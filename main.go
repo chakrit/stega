@@ -66,7 +66,7 @@ func runDecode(cmd *cobra.Command, args []string) error {
 
 func main() {
 	if err := rootCmd.Execute(); err != nil {
-		log.Fatalln(err)
+		// do nothing, cobra already prints error for us
 	}
 }
 
